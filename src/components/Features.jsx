@@ -1,6 +1,30 @@
 import React from 'react'
 
 const Features = () => {
+const data = [
+
+    {
+        id: "01",
+        title : "Track progress",
+        des : "See weekly wins and stay focused on the goals that matter most."
+
+    },
+    {
+            id: "02",
+ title : "Learn with eases",
+        des : "Access simple tools and guided resources designed for busy students."
+    },
+    {
+            id: "03",
+ title : "Study smarter",
+        des : "Organize lessons, notes, and deadlines in one calm workspace."
+    }
+
+
+]
+
+
+
   return (
     <div>
         
@@ -10,24 +34,26 @@ const Features = () => {
             <h2>Everything you need to learn with clarity.</h2>
           </div>
 
+
+
+
           <div className="feature-grid">
-            <article className="feature-card">
-              <div className="feature-icon">01</div>
-              <h3>Study smarter</h3>
-              <p>Organize lessons, notes, and deadlines in one calm workspace.</p>
+
+{data.map((dta)=>{
+return(
+
+<article key={dta} className="feature-card">
+              <div className="feature-icon">{dta.id}</div>
+              <h3>{dta.title}</h3>
+              <p>{dta.des}</p>
             </article>
 
-            <article className="feature-card">
-              <div className="feature-icon">02</div>
-              <h3>Track progress</h3>
-              <p>See weekly wins and stay focused on the goals that matter most.</p>
-            </article>
 
-            <article className="feature-card">
-              <div className="feature-icon">03</div>
-              <h3>Learn with ease</h3>
-              <p>Access simple tools and guided resources designed for busy students.</p>
-            </article>
+)
+
+})}
+
+            
           </div>
         </section>
     </div>

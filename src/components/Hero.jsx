@@ -1,4 +1,5 @@
 import React from 'react'
+import Stats from './Stats'
 
 const Hero = () => {
   return (
@@ -16,21 +17,9 @@ const Hero = () => {
               <button className="primary-button">Start free</button>
               <button className="secondary-button">View demo</button>
             </div>
+       <Stats/>
 
-            <div className="stats">
-              <div>
-                <strong>12k+</strong>
-                <span>students</span>
-              </div>
-              <div>
-                <strong>4.9/5</strong>
-                <span>rating</span>
-              </div>
-              <div>
-                <strong>24/7</strong>
-                <span>support</span>
-              </div>
-            </div>
+        
           </div>
 
           <div className="hero-card" aria-label="Study dashboard preview">
